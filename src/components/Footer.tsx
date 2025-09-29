@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Car, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { VroomLogo } from "@/components/VroomLogo";
+import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -8,13 +9,8 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2 text-xl font-bold">
-              <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-                <Car className="w-5 h-5 text-blue-primary" />
-              </div>
-              <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-                CarRental
-              </span>
+            <Link to="/" className="flex items-center">
+              <VroomLogo size="sm" className="bg-white rounded-md p-1" />
             </Link>
             <p className="text-sm text-background/70 max-w-sm">
               Experience premium vehicles with our convenient daily and monthly subscription plans. 
@@ -127,7 +123,7 @@ export const Footer = () => {
         
         <div className="border-t border-background/20 pt-8 text-center">
           <p className="text-sm text-background/70">
-            © 2024 CarRental. All rights reserved.
+            © 2024 VROOM. All rights reserved.
           </p>
         </div>
       </div>

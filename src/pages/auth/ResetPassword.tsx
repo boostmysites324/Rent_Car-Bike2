@@ -5,7 +5,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Car, ArrowLeft } from 'lucide-react';
+import { VroomLogo } from '@/components/VroomLogo';
+import { ArrowLeft } from 'lucide-react';
 import { z } from 'zod';
 
 const resetPasswordSchema = z.object({
@@ -54,13 +55,8 @@ export default function ResetPassword() {
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
-            <div className="w-10 h-10 bg-blue-primary rounded-lg flex items-center justify-center">
-              <Car className="w-6 h-6 text-white" />
-            </div>
-            <span className="bg-gradient-to-r from-blue-primary to-blue-600 bg-clip-text text-transparent">
-              CarRental
-            </span>
+          <Link to="/" className="flex items-center">
+            <VroomLogo size="lg" />
           </Link>
         </div>
 

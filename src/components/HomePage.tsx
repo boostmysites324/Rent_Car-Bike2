@@ -101,7 +101,7 @@ export const HomePage = () => {
               <div className="space-y-4">
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
                   Drive Your Dreams with
-                  <span className="text-blue-primary"> Flexible </span>
+                  <span className="text-blue-primary"> VROOM </span>
                   Car Subscriptions
                 </h1>
                 <p className="text-lg text-grey-text max-w-lg">

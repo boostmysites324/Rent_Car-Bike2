@@ -1,5 +1,7 @@
 import { useState } from "react";
-import { Car } from "lucide-react";
+import { VroomLogo } from "./VroomLogo";
+import { Navigation } from "./Navigation";
+import { Footer } from "./Footer";
 import { SubscriptionToggle } from "./SubscriptionToggle";
 import { FilterSidebar } from "./FilterSidebar";
 import { CarCard } from "./CarCard";
@@ -88,17 +90,11 @@ export const CarRentalPlatform = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
+      <Navigation />
+      
+      {/* Subscription Toggle Header */}
       <header className="bg-white border-b border-grey-border px-6 py-4">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-blue-primary rounded-lg flex items-center justify-center">
-              <Car className="w-5 h-5 text-white" />
-            </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-primary to-blue-600 bg-clip-text text-transparent">
-              CarRental
-            </h1>
-          </div>
           <SubscriptionToggle 
             value={subscriptionType} 
             onChange={setSubscriptionType} 
@@ -145,6 +141,8 @@ export const CarRentalPlatform = () => {
           </div>
         </main>
       </div>
+      
+      <Footer />
     </div>
   );
 };

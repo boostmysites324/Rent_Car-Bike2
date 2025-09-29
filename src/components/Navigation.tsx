@@ -2,7 +2,8 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { useAuth } from "@/contexts/AuthContext";
-import { Car, Menu, X, User, Settings, LogOut } from "lucide-react";
+import { VroomLogo } from "@/components/VroomLogo";
+import { Menu, X, User, Settings, LogOut } from "lucide-react";
 import { useState } from "react";
 
 export const Navigation = () => {
@@ -30,15 +31,10 @@ export const Navigation = () => {
   return (
     <nav className="bg-white border-b border-grey-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 text-xl font-bold text-blue-primary">
-            <div className="w-8 h-8 bg-blue-primary rounded-lg flex items-center justify-center">
-              <Car className="w-5 h-5 text-white" />
-            </div>
-            <span className="bg-gradient-to-r from-blue-primary to-blue-600 bg-clip-text text-transparent">
-              CarRental
-            </span>
+          <Link to="/" className="flex items-center">
+            <VroomLogo size="lg" />
           </Link>
           
           {/* Desktop Navigation */}
